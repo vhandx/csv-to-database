@@ -11,7 +11,7 @@ def job00():
     op00.process()
 
 
-schedule.every(10).seconds.do(job00)
+schedule.every(10).minutes.do(job00)
 
 while True:
     schedule.run_pending()
